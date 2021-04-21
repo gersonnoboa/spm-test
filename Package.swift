@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "WebRTC",
-            targets: ["WebRTC"])
+            targets: ["WebRTCTarget"])
     ],
     targets: [
         .binaryTarget(
@@ -18,7 +18,7 @@ let package = Package(
             checksum: "996f02aff0f0ade1a16f0d8798150e58a126934ebdfd20610421931bfa459859"
         ),
         .target(
-            name: "WebRTC",
+            name: "WebRTCTarget",
             dependencies: [
                 "WebRTC"
             ]
